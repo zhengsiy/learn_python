@@ -1,6 +1,8 @@
 import unittest
 from employee_give_raises import Employee
 
+#题目：为Employee 编写一个测试用例，其中包含两个测试方法：test_give_default_raise() 和 test_give_custom_raise()。使用方法 setUp()，以免
+#      在每个测试用例方法中都新建雇员实例。运行这个测试用例，确认两个测试用例都通过了。
 
 class TestEmployeeraises(unittest.TestCase):
     '''针对雇员信息类的测试'''
