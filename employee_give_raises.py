@@ -20,12 +20,13 @@ class Employee:
             self.salary = 5000
         else:
             self.salary += salary
-        #print(f"年薪：{self.salary}")
+            
+        return self.salary
     
 
     
 
-my_employee=Employee("思玉",'郑')
-my_employee.give_raise(1000)
-print(f'姓名：{my_employee.last_name}{my_employee.first_name},年薪：{my_employee.salary}')
+# my_employee=Employee("思玉",'郑')
+# my_employee.give_raise(1000)
+# print(f'姓名：{my_employee.last_name}{my_employee.first_name},年薪：{my_employee.salary}')
 
