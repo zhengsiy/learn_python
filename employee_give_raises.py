@@ -6,26 +6,26 @@ class Employee:
     def __init__(self,first_name,last_name):
         self.first_name=first_name
         self.last_name=last_name
-        self.salary=0
-        print(f'姓名：{last_name}{first_name},年薪：{self.give_raise(self.salary)}')
+        #设置默认年薪为5000元
+        self.salary=5000
+
+        
         
         
 
     def give_raise(self,salary):
         
-        if salary != 0:
-            self.salary+=salary
+        #若没有指定更要增加的年薪，则使用默认年薪
+        if salary == 0:
+            self.salary = 5000
         else:
-            self.salary += 5000
-        print(f"年薪：{self.salary}")
+            self.salary += salary
+        #print(f"年薪：{self.salary}")
     
 
     
 
 my_employee=Employee("思玉",'郑')
-my_employee.give_raise(0)
-
-
-
-
+my_employee.give_raise(1000)
+print(f'姓名：{my_employee.last_name}{my_employee.first_name},年薪：{my_employee.salary}')
 
