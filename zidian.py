@@ -121,7 +121,7 @@ for username,user_info in users.items():
         wife.append(Full_name)
     if Full_name=='xinwang':
         hasband.append(Full_name)
-print(f"\n And 这是我第一次在test里面写的东西 s wife")
+print(f"\n And gsdrgsgser 开始第二次冲突 s wife")
 
 
 
