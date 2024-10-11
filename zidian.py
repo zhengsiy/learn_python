@@ -108,6 +108,9 @@ users={'siyuzheng':{'firstname':'zheng','last_name':'siyu','location':'江西万
        'hongjiliu':{'firstname':'liu','last_name':'hongji','location':'广东韶关'},
        'wangxin':{'firstname':'xin','last_name':'wang','location':'江西宜春'}}
 
+users='siyuzheng',
+
+
 wife=[]
 hasband=[]
 for username,user_info in users.items():
@@ -121,5 +124,5 @@ for username,user_info in users.items():
         wife.append(Full_name)
     if Full_name=='xinwang':
         hasband.append(Full_name)
-print(f"\n And there is a important infomation : {wife[0]} is {hasband[0]}'s wife")
+print(f"\n And there is a  infomation : {wife[0]} is {hasband[0]}'s wife")
 
